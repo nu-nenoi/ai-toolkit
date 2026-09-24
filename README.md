@@ -16,11 +16,12 @@ As the toolkit grows, this repo will expand to cover more AI use cases: code gen
 
 | Category | Resource | Description |
 |----------|----------|-------------|
-| **Skills** | [`document`](.github/skills/document/) | Agent skill for producing structured Markdown documentation of any kind — READMEs, ADRs, runbooks, JIRA tickets, incident reports, and more |
+| **Skills** | [`document`](skills/document/) | Agent skill for producing structured Markdown documentation of any kind — READMEs, ADRs, runbooks, JIRA tickets, incident reports, and more |
+| **Prompts** | [`setup-karpathy-wiki`](prompts/setup-karpathy-wiki.md) | Universal scaffolding meta-prompt to configure a Karpathy LLM Wiki knowledge architecture |
 
 ## Using the Skills
 
-Skills are agent instruction files designed for use with [GitHub Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide) in VS Code. Each skill lives in `.github/skills/<name>/` and contains a `SKILL.md` that the agent reads to follow a specific workflow.
+Skills are agent instruction files designed for use with [GitHub Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide) in VS Code or other AI agent harnesses. Each skill lives in `skills/<name>/` and contains a `SKILL.md` that the agent reads to follow a specific workflow.
 
 **To use a skill:**
 
@@ -33,7 +34,7 @@ Each skill folder also contains reference files and templates that the agent loa
 <details>
 <summary>Example: using the <code>document</code> skill</summary>
 
-Attach `.github/skills/document/SKILL.md` to a Copilot Chat message, then say:
+Attach `skills/document/SKILL.md` to a Copilot Chat message, then say:
 
 ```
 Write a runbook for rotating the database credentials in the payments service.
