@@ -111,7 +111,7 @@ The relation graph lives in frontmatter, not in prose links. Agents traverse the
 
 ---
 
-### 3. Agent Instructions
+### 4. Agent Instructions
 
 In the file chosen in Q1, append:
 
@@ -128,7 +128,7 @@ In the file chosen in Q1, append:
 
 ---
 
-### 4. Workflows
+### 5. Workflows
 
 Create workflow instruction files at `.agent/workflows/` (or `.agent/skills/` depending on the harness):
 
@@ -156,7 +156,7 @@ Create workflow instruction files at `.agent/workflows/` (or `.agent/skills/` de
 
 ---
 
-### 5. Autonomous Lint Trigger
+### 6. Autonomous Lint Trigger
 
 Create `scripts/wiki-lint-trigger.sh` (POSIX shell):
 - Check if `wiki/index.md` exists and contains `lint_trigger: enabled`. If not, exit silently with code `0`.
